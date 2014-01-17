@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'js/plugins/*.js',
+                'js/main.js',
                 '!js/scripts.min.js'
             ]
         },
@@ -21,8 +21,6 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'assets/css/main.min.css': [
-                        'bower_components/bootstrap/less/bootstrap.less',
-                        'bower_components/font-awesome/less/font-awesome.less',
                         'less/main.less'
                     ]
                 }
@@ -51,7 +49,8 @@ module.exports = function(grunt) {
         watch: {
             less: {
                 files: [
-                    'less/*.less'
+                    'less/custom-variables.less',
+                    'less/custom-other.less'
                 ],
                 tasks: ['recess']
             },
@@ -71,7 +70,6 @@ module.exports = function(grunt) {
     });
 
     // Load tasks
-    grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
