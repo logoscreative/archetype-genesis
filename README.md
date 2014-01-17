@@ -2,7 +2,7 @@
 
 # Archetype (WordPress Theme)
 
-<img align="right" src="./assets/touch-icon.png" title="Archetype WordPress Theme" alt="Archetype WordPress Theme" /> A Bootstrap-powered child theme for Genesis.
+<img align="right" src="./assets/dist/img/touch-icon.png" title="Archetype WordPress Theme" alt="Archetype WordPress Theme" /> A Bootstrap-powered child theme for Genesis.
 
 Includes:
 
@@ -26,6 +26,10 @@ I usually pair it with a litany of other plugins to add functionality as needed.
 I see Archetype helping folks in one or both of two ways: being a base for your child theme, or being a fork-able repo for your theme. **While this isn't a difficult theme to implement, it is certainly not plug-and-play.**
 
 ## Hooks ##
+
+### archetype_shortcut_icon (shortcut icon) ###
+
+(string) Pass the URL of your favicon
 
 ### archetype_touch_icon (apple-touch-icon-precomposed) ###
 

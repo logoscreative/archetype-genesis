@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         },
         imageoptim: {
             files: [
-                'assets/dist/css/img'
+                'assets/dist/img'
             ],
             options: {
                 quitAfter: true

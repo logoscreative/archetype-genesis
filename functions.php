@@ -12,7 +12,7 @@ define( 'CHILD_THEME_URL', 'http://logoscreative.co' );
 define( 'CHILD_THEME_VERSION', '1.0.2' );
 
 /* ----------------------------------------------------------- *
- * Scripts
+ * Styles & Scripts
  * ----------------------------------------------------------- */
 
 function archetype_enqueue_bootstrap() {
@@ -49,7 +49,7 @@ add_action( 'wp_enqueue_scripts', 'archetype_enqueue_bootstrap' );
 function archetype_head_markup() {
 
 	// Touch Icon
-	$output = '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="' . apply_filters( 'archetype_touch_icon', get_stylesheet_directory_uri() . '/assets/touch-icon.png' ) . '" />';
+	$output = '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="' . apply_filters( 'archetype_touch_icon', get_stylesheet_directory_uri() . '/assets/dist/img/touch-icon.png' ) . '" />';
 
 	// Help IE
 	$output .= '
@@ -67,6 +67,17 @@ function archetype_head_markup() {
 
 add_action( 'wp_head', 'archetype_head_markup' );
 
+/* ----------------------------------------------------------- *
+ * Add Custom Favicon
+ * ----------------------------------------------------------- */
+
+function archetype_favicon_filter( $favicon_url ) {
+
+	return apply_filters( 'archetype_shortcut_icon', get_stylesheet_directory_uri() . '/assets/dist/img/favicon.ico' );
+
+}
+
+add_filter( 'genesis_pre_load_favicon', 'archetype_favicon_filter' );
 
 /* ----------------------------------------------------------- *
  * Add HTML5 markup structure
