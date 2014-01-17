@@ -1,6 +1,6 @@
 # Archetype for Genesis #
 
-<img align="right" src="./assets/dist/img/touch-icon.png" title="Archetype WordPress Theme" alt="Archetype WordPress Theme" /> A Bootstrap-powered child theme boilerplate for Genesis. You won't want to run this as-is, but it serves as a great starting point when you like these tools.
+<img align="right" src="./assets/dist/img/touch-icon.png" title="Archetype WordPress Theme" alt="Archetype WordPress Theme" /> A Bootstrap-powered child theme boilerplate for Genesis. You won't want to run this as-is, but it serves as a great starting point when you like these tools. Consider pairing it with my [Bootstrap shortcodes plugin](https://github.com/logoscreative/bs-wp-shortcodes) for use by more savvy clients.
 
 Includes:
 
