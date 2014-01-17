@@ -1,7 +1,5 @@
 # Archetype for Genesis #
 
-# Archetype (WordPress Theme)
-
 <img align="right" src="./assets/dist/img/touch-icon.png" title="Archetype WordPress Theme" alt="Archetype WordPress Theme" /> A Bootstrap-powered child theme for Genesis.
 
 Includes:
