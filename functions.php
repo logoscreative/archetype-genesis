@@ -30,10 +30,10 @@ function archetype_enqueue_bootstrap() {
 
 	} elseif ( defined('ARCHETYPE_ENQUEUE') && ARCHETYPE_ENQUEUE === 'bower' ) {
 
-		wp_register_style( 'archetype-styles', get_stylesheet_directory_uri() . '/assets/css/main.min.css' );
+		wp_register_style( 'archetype-styles', get_stylesheet_directory_uri() . '/assets/dist/css/main.min.css' );
 		wp_enqueue_style( 'archetype-styles' );
 
-		wp_register_script( 'archetype-scripts', get_stylesheet_directory_uri() . '/js/scripts.min.js', array('jquery'), false, true );
+		wp_register_script( 'archetype-scripts', get_stylesheet_directory_uri() . '/assets/dist/js/scripts.min.js', array('jquery'), false, true );
 		wp_enqueue_script( 'archetype-scripts' );
 
 	}

@@ -9,8 +9,8 @@ module.exports = function(grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'js/main.js',
-                '!js/scripts.min.js'
+                'assets/dev/js/main.js',
+                '!assets/dev/js/scripts.min.js'
             ]
         },
         recess: {
@@ -20,8 +20,8 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'assets/css/main.min.css': [
-                        'less/main.less'
+                    'assets/dist/css/main.min.css': [
+                        'assets/dev/less/main.less'
                     ]
                 }
             }
@@ -33,14 +33,14 @@ module.exports = function(grunt) {
             build: {
                 src: [
                     'bower_components/bootstrap/dist/js/bootstrap.js',
-                    'js/main.js'
+                    'assets/dev/js/main.js'
                 ],
-                dest: 'js/scripts.min.js'
+                dest: 'assets/dist/js/scripts.min.js'
             }
         },
         imageoptim: {
             files: [
-                'assets/css/img'
+                'assets/dist/css/img'
             ],
             options: {
                 quitAfter: true
@@ -49,8 +49,8 @@ module.exports = function(grunt) {
         watch: {
             less: {
                 files: [
-                    'less/custom-variables.less',
-                    'less/custom-other.less'
+                    'assets/dev/less/custom-variables.less',
+                    'assets/dev/less/custom-other.less'
                 ],
                 tasks: ['recess']
             },
@@ -63,8 +63,8 @@ module.exports = function(grunt) {
         },
         clean: {
             dist: [
-                'css/main.min.css',
-                'js/scripts.min.js'
+                'assets/dist/css/main.min.css',
+                'assets/dist/js/scripts.min.js'
             ]
         }
     });
