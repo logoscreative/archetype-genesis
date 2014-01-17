@@ -7,13 +7,13 @@ Includes:
 1. [Bootstrap 3.0.3](http://getbootstrap.com/)
 1. [Font Awesome 4.0.3](http://fortawesome.github.io/Font-Awesome/)
 
-[Grunt](http://gruntjs.com/) lints and compiles LESS and JS files on your behalf. Once you've got the [necessary items](http://gruntjs.com/getting-started) installed, you can start by editing `assets/dev/js/main.js` and `assets/dev/less/main.less`, then run `grunt` in the child theme's directory. Run `grunt watch` to automatically run everything when you save one of the watched files.
-
 ## Constants ##
 
 ### ARCHETYPE_ENQUEUE ###
 
 By default, Archetype pulls Bootstrap and Font Awesome files from [Bootstrap CDN](http://www.bootstrapcdn.com/). To use local resources, you'll use [Bower](http://bower.io/). Once it's installed (`npm install -g bower`), run `bower install` in Archetype's root directory to automatically install the dependencies. Then, place `define( 'ARCHETYPE_ENQUEUE', 'bower' );` in your `wp-config.php` file to enqueue those files instead.
+
+When you use the Bower option, [Grunt](http://gruntjs.com/) lints and compiles LESS and JS files on your behalf. Once you've got the [necessary items](http://gruntjs.com/getting-started) installed, you can start by editing `assets/dev/js/main.js` and `assets/dev/less/main.less`, then run `grunt` in the child theme's directory. Run `grunt watch` to automatically run everything when you save one of the watched files.
 
 ## Why? ##
 
