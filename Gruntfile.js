@@ -4,20 +4,17 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         jshint: {
-            options: {
-                jshintrc: 'node_modules/grunt-contrib-jshint/.jshintrc'
-            },
             all: [
                 'Gruntfile.js',
                 'assets/dev/js/main.js',
                 '!assets/dev/js/scripts.min.js'
             ]
         },
-        recess: {
+        less: {
             dist: {
                 options: {
-                    compile: true,
-                    compress: true
+                    compress: true,
+                    sourceMap: false
                 },
                 files: {
                     'assets/dist/css/main.min.css': [
@@ -25,6 +22,12 @@ module.exports = function(grunt) {
                     ]
                 }
             }
+        },
+        autoprefixer: {
+          single_file: {
+              src: 'assets/dist/css/main.min.css',
+              dest: 'assets/dist/css/main.min.css'
+          }
         },
         uglify: {
             options: {
@@ -39,7 +42,7 @@ module.exports = function(grunt) {
             }
         },
         imageoptim: {
-            files: [
+            src: [
                 'assets/dist/img'
             ],
             options: {
@@ -52,7 +55,7 @@ module.exports = function(grunt) {
                     'assets/dev/less/custom-variables.less',
                     'assets/dev/less/custom-other.less'
                 ],
-                tasks: ['recess']
+                tasks: ['less']
             },
             js: {
                 files: [
@@ -74,14 +77,16 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-recess');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-imageoptim');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     // Register tasks
     grunt.registerTask('default', [
         'clean',
-        'recess',
-        'uglify',
+        'less',
+        'autoprefixer',
+        'uglify'
     ]);
     grunt.registerTask('dev', [
         'watch'

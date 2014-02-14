@@ -1,9 +1,9 @@
 {
   "name": "archetype",
-  "version": "1.0",
+  "version": "1.0.3",
   "homepage": "https://github.com/logoscreative/archetype-genesis",
   "authors": [
-    "Cliff Seal <cliff@logos-creative.com>"
+    "Cliff Seal <cliff@logoscreative.co>"
   ],
   "description": "Archetype theme, built as a Genesis Child theme",
   "main": "assets/theme.css",
@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.1.0",
+    "bootstrap": "~3.1.1",
     "font-awesome": "~4.0.3"
   }
 }
