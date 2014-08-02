@@ -82,7 +82,7 @@ add_filter( 'genesis_pre_load_favicon', 'archetype_favicon_filter' );
 /* ----------------------------------------------------------- *
  * Add HTML5 markup structure
  * ----------------------------------------------------------- */
-add_theme_support( 'html5' );
+add_theme_support( 'html5', array( 'search-form', 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
 /* ----------------------------------------------------------- *
  * Add viewport meta tag for mobile browsers
