@@ -1,6 +1,6 @@
 {
   "name": "archetype",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Archetype theme, built as a Genesis Child theme",
   "main": "index.js",
   "scripts": {

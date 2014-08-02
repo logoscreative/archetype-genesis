@@ -9,7 +9,7 @@ include_once( get_template_directory() . '/lib/init.php' );
  * ----------------------------------------------------------- */
 define( 'CHILD_THEME_NAME', 'Archetype for Genesis' );
 define( 'CHILD_THEME_URL', 'http://logoscreative.co' );
-define( 'CHILD_THEME_VERSION', '1.0.4' );
+define( 'CHILD_THEME_VERSION', '1.0.5' );
 
 /* ----------------------------------------------------------- *
  * Styles & Scripts
