@@ -1,6 +1,6 @@
 {
   "name": "archetype",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://github.com/logoscreative/archetype-genesis",
   "authors": [
     "Cliff Seal <cliff@logoscreative.co>"
@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.0",
+    "bootstrap": "~3.3.1",
     "font-awesome": "~4.2.0"
   }
 }

@@ -9,7 +9,7 @@ include_once( get_template_directory() . '/lib/init.php' );
  * ----------------------------------------------------------- */
 define( 'CHILD_THEME_NAME', 'Archetype for Genesis' );
 define( 'CHILD_THEME_URL', 'http://logoscreative.co' );
-define( 'CHILD_THEME_VERSION', '1.0.5' );
+define( 'CHILD_THEME_VERSION', '1.0.6' );
 
 /* ----------------------------------------------------------- *
  * Styles & Scripts
@@ -19,10 +19,10 @@ function archetype_enqueue_bootstrap() {
 
 	if ( !defined('ARCHETYPE_ENQUEUE') ) {
 
-		wp_register_style( 'bootstrap-latest', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css' );
+		wp_register_style( 'bootstrap-latest', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' );
 		wp_enqueue_style( 'bootstrap-latest' );
 
-		wp_register_script( 'bootstrap-latest', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js', array( 'jquery' ) );
+		wp_register_script( 'bootstrap-latest', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array( 'jquery' ) );
 		wp_enqueue_script( 'bootstrap-latest' );
 
 		wp_register_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
