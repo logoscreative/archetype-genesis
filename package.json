@@ -1,6 +1,6 @@
 {
   "name": "archetype",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Archetype theme, built as a Genesis Child theme",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,6 @@
     "grunt-contrib-watch": "^0.5.3",
     "grunt-imageoptim": "~1.4.1",
     "grunt-recess": "^0.5.1",
-    "grunt-version": "~0.3.0"
+    "grunt-version": "^0.3.3"
   }
 }
