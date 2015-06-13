@@ -25,6 +25,13 @@ When you use the Bower option, [Grunt](http://gruntjs.com/) lints and compiles L
 
 (string) Pass the URL of your 144x144 icon
 
+## Pro Tip ##
+
+You're probably building a WordPress theme and not an application. As such, you probably don't need 100% of what Bootstrap is offering. Cut down on your file sizes by using the `ARCHETYPE_ENQUEUE` functionality and editing the development files to suit your project.
+
+1. In `Gruntfile.js`, under `uglify->build->src`, delete `bower_components/bootstrap/dist/js/bootstrap.js` as the source and invidually add the files in `bower_components/bootstrap/dist/js` that you need.
+1. In `main.less`, delete `@import "../../../bower_components/bootstrap/less/bootstrap.less";` and add the files in `bower_components/bootstrap/less` that you need. You can copy the contents of `bower_components/bootstrap/less/bootstrap.less` and add them to the top of your `main.less` file, removing the imported files you no longer need.
+
 ## Troubleshooting ##
 
 Please feel free to file an issue here if you find a bug, and I'll do my best to fix it if it betters the theme for everyone. I'll gladly review pull requests for new features, and will consider merging it—again if it betters the theme for everyone.
